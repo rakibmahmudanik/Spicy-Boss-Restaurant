@@ -1,0 +1,563 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(243, 243, 243);
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Merienda', cursive;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.row{
+    width: 100%;
+}
+
+
+
+.row::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+
+
+[class*=col-]{
+    padding: 10px;
+    float: left;
+    
+}
+[class*=col-]{
+    width: 100%;
+    
+}
+
+
+/* Header start */
+header{
+    background: rgb(0, 211, 46);
+    padding: 0 1%;
+    text-align: center;
+}
+
+
+.logo-div{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0 auto;
+    
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: white;
+
+}
+
+
+nav ul li{
+    display: block;
+    
+}
+ nav ul li a{
+     display: block;
+     text-decoration: none;
+     color:white;
+     font-size: 1.5rem;
+     line-height: 70px;
+     text-transform: uppercase;
+     font-family: 'Lato', sans-serif;
+     font-weight: bolder;
+     padding: 0 20px;
+     border-radius: 10px;
+     transition: .4s;
+
+ }
+
+
+nav ul li a:hover{
+    background-color: rgb(255, 42, 42);
+}
+
+/* Header end */
+
+/* banner Start */
+#banner-section{
+    background-image: url(images/Banner.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content{
+    text-align: center;
+    padding: 50px 10px;
+    
+
+}
+
+.banner-content h1{
+    color: white;
+    width: 100%;
+    font-size: 2.8rem;
+    background-color: rgba(255, 42, 42,0.8);
+    font-family: 'Merienda', cursive;
+    line-height: 70px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 0;
+    
+}
+.banner-content p{
+    font-size: 1.5rem;
+    background-color:rgba(0, 211, 46,0.8);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.banner-content .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:rgba(0, 211, 46,0.8);
+    color: white;
+    transition: .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background-color:rgba(0, 211, 46,0.4);
+}
+/* banner end */
+/* About section start */
+#about-section{
+    padding: 1%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    
+}
+hr{
+    border: 3px solid rgb(255, 42, 42);
+    border-bottom: none;
+    margin:auto;
+    width: 40%;
+    line-height: 50px;
+   
+
+}
+h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 70px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.about-img img{
+    width:300px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 50%;
+    box-shadow: 6px 6px 8px rgba(179, 179, 179, 0.5);
+    
+}
+
+.about-content-img{
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    padding: 0 20px;
+       
+    
+    
+}
+
+.about-content p{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight:bolder ;
+}
+/* About section end */
+
+/* Food menu section start (card design) */
+
+#food-menu-section{
+    
+    padding:1%;
+    
+    
+    
+}
+.menu-title{
+    font-family: 'Lato', sans-serif;
+    padding:1%;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    
+    
+}
+
+
+
+
+.card-body{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    
+    
+    
+    
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+    
+}
+
+.card-desc{
+    
+    
+    background-color:rgba(255, 238, 0,0.4);
+}
+
+.card-desc h3{
+    width: 100%;
+    line-height: 50px;
+    font-size: 2rem;
+    background-color:rgba(0, 211, 46,0.4);
+    padding: 5px;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0,0.3);
+}
+
+
+
+
+/* .card-2{
+    
+    
+    background-color:rgba(0, 211, 46,0.3);
+}
+
+.card-2 h3{
+    background-color:rgba(255, 238, 0,0.3);
+    
+} */
+
+
+
+
+
+.card-desc >p{
+    margin: 10px auto;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card-desc .price{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    color:rgb(255, 42, 42) ;
+    transition: 0.4s;
+    font-weight: 800;
+    margin: 10px auto;
+    
+}
+
+
+.card{
+    margin: 30px 0;
+    transition: .4s;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(165, 165, 165, 0.5);
+    
+}
+/* Food menu section end (Card Design) */
+
+
+
+/* Contact us start */
+
+#contact-section{
+    padding: 1%;
+    text-align: center;
+    background: rgb(75, 75, 75);
+    margin:30px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.map{
+    width: 100%;
+    height: 300px;
+}
+.contect-desc{
+    
+    margin:10px 0px;
+    width: 100%;
+    height: 300px;
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
+
+.contect-desc h4{
+    font-size:1.2rem;
+    padding: 5px 0;
+}
+.contect-desc p{
+    font-size: 1rem;
+    color: rgb(218, 216, 216);
+    
+}
+
+/* Contact us end */
+
+
+/* Footer section Start */
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+.social-icons{
+    padding-bottom: 5px;
+    
+}
+
+.icon-style{
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: 0.4s;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.icon-style:hover{
+    background-color: rgb(255, 42, 42);
+    
+}
+
+/* Footer section End */
+
+
+
+
+ /* Small device (portrait tables and large phones, 576px and up) */ 
+ @media (min-width:576px) {
+    
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+     
+ }
+
+
+  /* Medium device (portrait tables and large phones, 768px and up) */ 
+  @media (min-width:768px) {
+    
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+     
+ }
+
+
+  /* Large device (portrait tables and large phones, 992px and up) */ 
+  @media (min-width:992px) {
+
+   
+      /* Header start */
+      .logo-div{
+        float: left;
+    }
+
+    nav ul{
+        float: right;
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+
+    nav ul li a{
+        font-size: 1.25rem;
+        display: inline-block;
+        transition: .4s;
+        font-weight: 700;
+        /* box-shadow: 0px 4px 8px rgba(0, 0, 0,0.5); */
+        
+        
+    }
+
+    nav ul li a:hover{
+        transform: scale(1.2);
+        background: transparent;
+        opacity: 80%;
+        
+        /* color:rgba(255, 238, 0) ; */
+
+    }
+   
+
+/* Header end */
+
+
+/* Banner start */
+    #banner-section{
+        position: relative;
+        height: 100vh;
+    }
+    .banner-content{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .banner-content h1{
+        
+        width: 800px;
+        font-size: 3.5rem;
+        padding: 30px;
+    }
+
+    .banner-content p{
+        width: 500px;
+        padding: 15px;
+        margin: 50px auto;
+    }
+/* Banner end */
+
+
+/* About start */
+    hr{
+        width: 15%;
+    }
+
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .menu-title{
+        font-size: 2rem;
+    }
+
+    .about-img{
+        margin-right: 100px;
+    }
+
+    
+
+    .about-content p{
+        margin: 30px 30px 0px 0px;
+        text-align: justify;
+        font-size: 1.3rem;
+        padding: 20px;
+        
+    }
+
+/* About end */
+
+/* footer start */
+
+    footer p{
+        text-align: left;
+        font-size: 1rem;
+    }
+    .social-icons{
+        text-align: right;
+        
+    }
+
+
+
+/* footer end */
+
+
+
+    
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+     
+ }
